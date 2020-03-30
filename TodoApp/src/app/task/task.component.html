@@ -1,0 +1,23 @@
+<main>
+  <div class="container">
+    <h1 class="app-title">todo's</h1>
+
+    <form class="js-form">
+      <input autofocus type="text" name="taskDescription" placeholder="Build A Web App" [(ngModel)]="taskDescription"
+        class="js-todo-input" (keyup.enter)="addTask()">
+    </form>
+
+    <ul class="todo-list js-todo-list">
+      <li class="todo-item" *ngFor="let task of tasks">
+        <label [class.tick-complete]="task.IsDone" [class.tick]="!task.IsDone"
+          (click)="completeTask(task)"></label>
+        <span>{{task.Description}}</span>
+        <button class="delete-todo js-delete-todo" (click)="deleteTask(task)">
+          <svg>
+            <use href="#delete-icon"></use>
+          </svg>
+        </button>
+      </li>
+    </ul>
+  </div>
+</main>

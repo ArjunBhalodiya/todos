@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: lato, sans-serif;
+  line-height: 1.4;
+  background-color: #7ec3b0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #7ec3b0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #009d9a;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #7ec3b0;
+}
