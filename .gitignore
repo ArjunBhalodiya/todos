@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/TodoApi/TasksApp/obj
+/TodoApi/TasksApp/bin
+/TodoApi/packages
+/TodoApi/.vs/TasksApp/v16/Server/sqlite3
+/Database/TaskDb_log.ldf
+/Database/TaskDb.mdf

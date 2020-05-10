@@ -139,3 +139,22 @@ GO
 ALTER DATABASE [TaskDb] SET  READ_WRITE 
 GO
 
+USE [TaskDb]
+GO
+/****** Object:  Table [dbo].[Task]    Script Date: 5/10/2020 12:07:28 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[Task](
+	[Id] [int] IDENTITY(1,1) NOT NULL,
+	[Description] [varchar](500) NOT NULL,
+	[IsDone] [bit] NOT NULL,
+	[IsDelete] [bit] NOT NULL,
+	[CreatedDate] [datetime] NOT NULL,
+ CONSTRAINT [PK_Tasks] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
